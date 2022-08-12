@@ -7,7 +7,7 @@
     "build": "tsc -w",
     "dev": "nodemon build/index.js",
     "server": "concurrently --kill-others \"npm run dev\"",
-    "start": "node index.js"
+    "start": "npm run dev"
   },
   "keywords": [],
   "author": "",
