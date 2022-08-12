@@ -1,12 +1,12 @@
 const mysql = require("mysql");
-const root = "game_start";
-const password = "NCKeT_*ffa3LvR4";
-const database = "ecomerce_game";
-const host = "MySQL.8.0.Server";
+const user = "u544016274_antonio";
+const password = "_YHHq5xrmXV_q86KS_";
+const database = "u544016274_game_starts";
+const host = "sql538.main-hosting.eu";
 
 module.exports = mysql.createPool({
   host: host,
-  user: root,
+  user: user,
   database: database,
   password: password,
 });
