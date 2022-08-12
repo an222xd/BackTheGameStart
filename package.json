@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc -w",
     "dev": "nodemon build/index.js",
     "server": "concurrently --kill-others \"npm run dev\"",
     "start": "node build/index.js"
