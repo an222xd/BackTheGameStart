@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "build": "tsc -w",
+    "dev": "nodemon build/index.js",
+    "server": "concurrently --kill-others \"npm run build\" \"npm run dev\"",
+    "start": "node build/index.js"
   },
   "keywords": [],
   "author": "",
